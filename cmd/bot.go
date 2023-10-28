@@ -102,7 +102,7 @@ func StartTaskBot(ctx context.Context, bt, wh string) error {
 	return nil
 }
 func main() {
-	if err := godotenv.Load("../.env"); err != nil {
+	if err := godotenv.Load(".env"); err != nil {
 		log.Fatalf("Error loading .env file: %v", err)
 	}
 
